@@ -22,7 +22,7 @@ while True:
         for item in skinPortItems:
             if item['suggested_price'] is None:
               continue
-            if item['min_price'] < .77 * item['suggested_price'] and item['quanity'] > 10 and item['min_price'] > 3.00:
+            if item['min_price'] < .77 * item['suggested_price'] and item['quantity'] > 10 and item['min_price'] > 3.00:
                 print(f"{item['market_hash_name']} | Min: ${item['min_price']} | Suggested: ${item['suggested_price']}")
     print("Waiting 5 minutes...")
     time.sleep(300)
